@@ -1,0 +1,259 @@
+<!--<!DOCTYPE html>-->
+<!--<html lang=" en">-->
+
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title> My Simple HTML server</title>-->
+<!--</head>-->
+<!--<body>-->
+<!--<hi> Hello world</hi>-->
+<!--<p> This is an HTML content type.</p>-->
+<!--<p> </p>-->
+<!--<button href="/json"></button>-->
+<!--<script>-->
+<!--    set interval-->
+
+<!--</script>-->
+<!--</body>-->
+<!--</html>-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Front end challenge</title>
+</head>
+<style>
+    .parent {
+
+        margin-block: 3%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+
+        color: rgb(60, 59, 59);
+
+
+    }
+
+    .navbar{
+        display: grid;
+
+    }
+    .logo{
+        /* border: 2px solid blue; */
+
+    }
+    .mainContainer {
+        width:100px;
+    align-content: space-between;
+        border:px;
+        color: rgb(60, 59, 59);
+        opacity:5;
+        border:2px solid red;
+    }
+
+
+    .leftContainer {
+
+        width: 30px;
+        border:2px solid red;
+        color: rgb(60, 59, 59);
+        opacity:5;
+    }
+
+
+    .child {
+        display: flex;
+
+        align-items: center;
+
+    }
+    .link {
+        display: flex;
+        justify-content: space-between;
+
+    }
+    .grand-child {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 150px;
+        opacity:5;
+    }
+    .logo{
+        display: flex;
+        width: 150px;
+        align-items: center;
+        padding-top: 5px;
+
+    }
+
+    .link{
+        width: 250px;
+    }
+    .register{
+        padding: 7px;
+
+        border-radius: 10px;
+        border: 1px solid rgb(60, 59, 59); ;
+
+    }
+    .center{
+        display: flex;
+        width: 100%;
+        height: 100%;
+        border: 30px;
+        /* gap: 20px; */
+        /* border: 3px solid red; */
+    }
+    .center> div{
+        padding-left: 40px;
+        padding-right: 50px;
+    }
+    .content{
+        margin: 3%;
+
+        width: 50%;
+        height: 480p;
+        /* border: 2px solid blue; */
+
+
+    }
+
+    .content>div{
+        width: 100%;
+        height: 120px;
+        /* border: 2px solid violet; */
+    }
+
+    .centerImage{
+        display: grid;
+        display: 1Fr 1Fr 1Fr 1Fr;
+        width: 60%;
+
+    }
+    .centerImage > img{
+
+        width: 100%;
+        height: 70%;
+
+        object-fit: contain;
+
+    }
+    .item1{
+    font-size: xx-large;
+    line-height: 0.5;
+    }
+
+    .item2 {
+
+        padding-top: 50px;
+        text-align: justify;
+        line-height: 0.8;
+        color: rgb(128, 121, 121);
+    }
+    .item3{
+        padding-top: 20px;
+    }
+
+    .item3>button{
+        margin-bottom: 30px;
+        margin-top: 15px;
+        background-color: black;
+        color: white;
+        text-align: center;
+        font-size: 15px;
+        border-radius: 7px;
+        /* width: 100px; */
+        /* height: 25px; */
+    }
+    .item4{
+
+        display: flex;
+        /* width: 80px; */
+    }
+    .img1{
+        align-content:space-evenly;
+        width: 150px;
+
+    }
+    .img2{
+        align-content:space-evenly;
+        width: 120px;
+    }
+    .img3{
+        align-content:space-evenly;
+        width: 120px;
+    }
+    .img4{
+        align-content:space-evenly;
+        width: 100px;
+    }
+    @media screen and (max-width:600px){
+        .content{ display: grid;
+            display: 1fr 1fr;
+            grid-column-start: 1;
+            grid-template-rows: 2;
+        }
+        .centerImage{
+            display: grid;
+            display: 1Fr 1Fr 1Fr 1Fr;
+            grid-column-start: 1;
+            grid-column-end: 2;
+        }
+    }
+
+</style>
+<!--<link rel="stylesheet" href="sytle.css" />-->
+<body>
+<nav class="navbar">
+    <div class="parent">
+        <div class="child">
+            <div class="logo">  <img src="ThreadsSocket/images/logo.svg" alt=" logo"></div>
+
+            <div class="link">
+                <div class="Features" >Features <img src="ThreadsSocket/images/icon-arrow-down.svg" alt="featureIcon"></div>
+                <div class="Company">Company <img src="ThreadsSocket/images/icon-arrow-down.svg" alt="companyIcon"></div>
+                <div class="Careers">Careers</div>
+                <div class="About">About</div>
+            </div>
+
+        </div>
+        <div  class="grand-child">
+            <div class="login">Login</div>
+            <div class="register">Register</div>
+        </div>
+
+    </div>
+</nav>
+<div class="center">
+
+    <div class="content">
+        <div class="item1">
+            <h2>Make</h2>
+            <h2>remote work</h2>
+        </div>
+        <div class="item2">
+            <p>Get your team in sync. no matter your location</p>
+            <p>Streamline processes. Create team rituals and</p>
+            <p>watch productivity soar</p>
+        </div>
+        <div class="item3"> <button>Learn more</button></div>
+
+        <div class="item4">
+            <div class="img1"> <img src="/ThreadsSocket/images/client-databiz.svg" alt="dropDownImages"> </img> </div>
+            <div class="img2"> <img src="ThreadsSocket/images/client-audiophile.svg" alt="dropDownImages"></div>
+            <div class="img3"> <img src="ThreadsSocket/images/client-meet.svg" alt="dropDownImages"> </div>
+            <div class="img4"> <img src="ThreadsSocket/images/client-maker.svg" alt="dropDownImages"></div>
+        </div>
+    </div>
+    <div class="centerImage"><img src="ThreadsSocket/images/image-hero-desktop.png" alt="centerImage"> </img></div>
+
+</div>
+
+
+</body>
+</html>
